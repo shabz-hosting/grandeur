@@ -55,26 +55,7 @@
 	}); 
 
 	// portfolio filter
-	$('.mry-filter a').on('click', function () {
-		$('.mry-filter .mry-current').removeClass('mry-current');
-		$(this).addClass('mry-current');
-
-		var selector = $(this).data('filter');
-		$('.mry-masonry-grid').isotope({
-			filter: selector
-		});
-		return false;
-	});
-
-	// masonry grid
-	$('.mry-masonry-grid').isotope({
-		filter: '*',
-		itemSelector: '.mry-masonry-grid-item',
-		percentPosition: true,
-		masonry: {
-			columnWidth: '.mry-grid-sizer'
-		}
-	});
+	
 
 	// fancybox
 	$('[data-fancybox="works"]').fancybox({
@@ -474,25 +455,7 @@
 		}
 
 		// portfolio filter
-		$('.mry-filter a').on('click', function () {
-			$('.mry-filter .mry-current').removeClass('mry-current');
-			$(this).addClass('mry-current');
-
-			var selector = $(this).data('filter');
-			$('.mry-masonry-grid').isotope({
-				filter: selector
-			});
-			return false;
-		});
-
-		$('.mry-masonry-grid').isotope({
-			filter: '*',
-			itemSelector: '.mry-masonry-grid-item',
-			percentPosition: true,
-			masonry: {
-				columnWidth: '.mry-grid-sizer'
-			}
-		});
+		
 
 		$('[data-fancybox="works"]').fancybox({
 			animationEffect: "zoom-in-out",

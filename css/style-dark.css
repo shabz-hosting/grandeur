@@ -588,10 +588,12 @@ a, a:hover {
 	z-index: 98;
 	top: 0;
 	right: 0;
-	background-color: #0a0a0a;
 	transform: translateX(100%);
 	transition: 0.3s ease-in-out;
 	transition-delay: 0.2s;
+	background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
 .mry-menu nav {
