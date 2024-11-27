@@ -481,6 +481,12 @@ a, a:hover {
 	opacity: 1;
 }
 
+@media (max-width: 550px) {
+	.mry-top-panel{
+		background-color: #0000009f;
+	}
+}
+
 .mry-app .mry-top-panel {
 	position: fixed;
 	z-index: 99;

@@ -31,8 +31,23 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); /* Responsive columns */
       gap: 30px; /* Space between grid items */
-      padding: 10%;
+      padding-left: 10%;
+      padding-right: 10%;
+	  padding-top: 30px;
+	  padding-bottom: 30px;
     }
+
+	@media (max-width: 550px) {
+		.image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Responsive columns */
+      gap: 30px; /* Space between grid items */
+      padding-left: 10%;
+      padding-right: 10%;
+	  padding-top: 30px;
+	  padding-bottom: 30px;
+    }
+	}
 
     .image-grid img {
       width: 100%;
@@ -232,7 +247,7 @@
 				<!-- footer end -->
 
 				<div class="mry-head-bg mry-head-bottom">
-					<img src="img/dark/projects/prjct-2/1.jpg" alt="background">
+					<img src="img/dark/1.jpg" alt="background">
 					<div class="mry-bg-overlay"></div>
 				</div>
 
@@ -243,8 +258,6 @@
 
 	<!-- jquery js -->
 	<script src="js/plugins/jquery.min.js"></script>
-	<!-- tween max js -->
-	<script src="js/plugins/tween-max.min.js"></script>
 	<!-- scroll magic js -->
 	<script src="js/plugins/scroll-magic.js"></script>
 	<!-- scroll magic gsap plugin js -->
