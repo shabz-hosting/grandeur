@@ -752,6 +752,7 @@ a, a:hover {
 	}
 }
 
+
 /* Frame after 550px */
 
 @media (max-width: 550px) {
@@ -1048,6 +1049,10 @@ html.is-animating .transition-fade .mry-loading-curtain {
 /* Slider Project after 768px */
 
 @media (max-width: 768px) {
+	.mry-ball {
+		display: none;
+	} 
+
 	.mry-project-slider-item .mry-project-frame .mry-cover-overlay.mry-gradient-overlay {
 		background-color: rgba(20, 20, 20, 0.45);
 		background-image: none;
