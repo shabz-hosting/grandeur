@@ -57,6 +57,31 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
     }
 
+	.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 10px;
+	margin: 10%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	border-radius: 4px;
+}
+
+img.four-grid-cells {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+}
+
+img.wide-image {
+    grid-column: span 2 / auto;
+}
+
 	</style>
 
 </head>
@@ -172,8 +197,82 @@
 						</div>
 					</div>
 				</div>
+				<div class="gallery">
 
-				<div class="image-grid">
+					<img class="four-grid-cells"
+						src="img/compressed/2.webp"
+						alt="product" />
+		
+					<img
+					src="img/compressed/3.webp"
+					alt="product" />
+		
+					<img class="wide-image"
+					src="img/compressed/4.webp"
+					alt="product" />
+		
+					<img
+					src="img/compressed/5.webp"
+					alt="product" />
+		
+					<img
+					src="img/compressed/6.webp"
+					alt="product" />
+		
+					<img class="wide-image"
+					src="img/compressed/7.webp"
+					alt="product" />
+
+					<img class="four-grid-cells"
+						src="img/compressed/8.webp"
+						alt="product" />
+		
+					<img
+					src="img/compressed/9.webp"
+					alt="product" />
+		
+					<img class="wide-image"
+					src="img/compressed/10.webp"
+					alt="product" />
+		
+					<img
+					src="img/compressed/11.webp"
+					alt="product" />
+		
+					<img
+					src="img/compressed/12.webp"
+					alt="product" />
+		
+					<img class="wide-image"
+					src="img/compressed/13.webp"
+					alt="product" />
+		
+					<img
+					src="img/compressed/15.webp"
+					alt="product" />
+		
+					<img
+					src="img/compressed/16.webp"
+					alt="product" />
+		
+					<img
+					src="img/compressed/17.webp"
+					alt="product" />
+		
+					<img
+					src="img/compressed/19.webp"
+					alt="product" />
+		
+					<img 
+					src="img/compressed/18.webp"
+					alt="product" />
+					
+					<img 
+					src="img/compressed/20.webp"
+					alt="product" />
+				</div>
+
+				<!-- <div class="image-grid">
 					<a href="img/compressed/2.webp" style="width: 100%;height: 100%;" data-fancybox="works" class="mry-zoom mry-magnetic-link">
 						<img src="img/compressed/2.webp" alt="product">
 					</a>
@@ -228,7 +327,7 @@
 					<a href="img/compressed/19.webp" style="width: 100%;height: 100%;" data-fancybox="works" class="mry-zoom mry-magnetic-link">
 						<img src="img/compressed/19.webp" alt="product">
 					</a>
-				</div>
+				</div> -->
 
 				<!-- footer -->
 				<footer class="mry-footer">
