@@ -187,7 +187,31 @@ a, a:hover {
 	line-height: 15px;
 	padding-top: 3px;
 }
-
+/* WhatsApp Button */
+@media (min-width:767px) {
+	.whatsApp{
+		position:fixed;
+		bottom:40px;
+		right:40px;
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+		font-size:30px;
+		z-index:100;
+	}
+}
+@media (max-width:766px) {
+.whatsApp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+}
+}
 /* After 992px */
 
 @media (max-width: 992px) {
