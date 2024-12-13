@@ -3,7 +3,9 @@
 
 
 <!-- Mirrored from steady-entremet-6081f5.netlify.app/portfolio-box-1 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Oct 2024 18:35:57 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,64 +29,51 @@
 
 	<title>Grandeur</title>
 	<style>
-		.image-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); /* Responsive columns */
-      gap: 30px; /* Space between grid items */
-      padding-left: 10%;
-      padding-right: 10%;
-	  padding-top: 30px;
-	  padding-bottom: 30px;
-    }
+		@media (min-width:767px) {
+			.gallery {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-auto-rows: auto;
+				grid-auto-flow: dense;
+				gap: 10px;
+				margin-left: 10%;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				margin-right: 10%;
+			}
 
-	@media (max-width: 550px) {
-		.image-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Responsive columns */
-      gap: 30px; /* Space between grid items */
-      padding-left: 10%;
-      padding-right: 10%;
-	  padding-top: 30px;
-	  padding-bottom: 30px;
-    }
-	}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 4px;
+			}
 
-    .image-grid img {
-      width: 100%;
-      aspect-ratio: 4 / 3; /* Rectangle shape with 16:9 ratio */
-      object-fit: cover; /* Ensures images fill the grid items without distortion */
-      border-radius: 4px; /* Optional: Adds rounded corners */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-    }
+			img.four-grid-cells {
+				grid-row: span 2 / auto;
+				grid-column: span 2 / auto;
+			}
 
-	.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
-    gap: 10px;
-	margin-left: 10%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-right: 10%;
-}
+			img.wide-image {
+				grid-column: span 2 / auto;
+			}
+		}
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-	border-radius: 4px;
-}
+		.gallery {
+			margin-left: 10%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin-right: 10%;
+		}
 
-img.four-grid-cells {
-    grid-row: span 2 / auto;
-    grid-column: span 2 / auto;
-}
-
-img.wide-image {
-    grid-column: span 2 / auto;
-}
-
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 4px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
 	</style>
 
 </head>
@@ -108,10 +97,13 @@ img.wide-image {
 		<div class="mry-magic-cursor">
 			<div class="mry-ball">
 				<div class="mry-loader">
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50"
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50"
 						style="enable-background:new 0 0 50 50;" xml:space="preserve">
-						<path d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
-							<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+						<path
+							d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+							<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25"
+								to="360 25 25" dur="0.6s" repeatCount="indefinite" />
 						</path>
 					</svg>
 				</div>
@@ -140,14 +132,17 @@ img.wide-image {
 		<!-- menu -->
 		<div class="mry-menu background-div" style="background-image: url(img/menu.jpg)">
 			<div class="container">
-				
+
 				<div class="row justify-content-between">
 					<div class="col-md-4">
 						<nav id="mry-dynamic-menu">
 							<ul>
-								<li class="menu-item"><a href="index.html" class="mry-anima-link mry-default-link">Home</a></li>
-								<li class="menu-item current-menu-item"><a class='mry-anima-link mry-default-link' href='gallery.html'>Gallery</a></li>
-								<li class="menu-item"><a class='mry-anima-link mry-default-link' href='contact.html'>Contact</a></li>
+								<li class="menu-item"><a href="index.html"
+										class="mry-anima-link mry-default-link">Home</a></li>
+								<li class="menu-item current-menu-item"><a class='mry-anima-link mry-default-link'
+										href='gallery.html'>Gallery</a></li>
+								<li class="menu-item"><a class='mry-anima-link mry-default-link'
+										href='contact.html'>Contact</a></li>
 							</ul>
 						</nav>
 
@@ -157,11 +152,13 @@ img.wide-image {
 							<div class="mry-info-box">
 								<div class="mry-mb-20">
 									<div class="mry-label mry-mb-5">Address:</div>
-									<div class="mry-text">Grandeur Furnish<br>Near Flyover, Harinagar, Punkunnam<br>Thrissur, Kerala 680002</div>
+									<div class="mry-text">Grandeur Furnish<br>Near Flyover, Harinagar,
+										Punkunnam<br>Thrissur, Kerala 680002</div>
 								</div>
 								<div class="mry-mb-20">
 									<div class="mry-label mry-mb-5">Email:</div>
-									<a class="mry-text mry-default-link" href="mailto:info@grandeur.com">info@grandeur.com</a>
+									<a class="mry-text mry-default-link"
+										href="mailto:info@grandeur.com">info@grandeur.com</a>
 								</div>
 								<div>
 									<div class="mry-label mry-mb-5">Phone:</div>
@@ -190,83 +187,48 @@ img.wide-image {
 					<div class="container">
 						<div class="mry-main-title mry-title-center">
 							<div class="mry-subtitle mry-mb-20 mry-fo">Gallery</div>
-							<h1 class="mry-mb-20 mry-fo">Explore Our Amazing Collections<span class="mry-animation-el"></span></h1>
+							<h1 class="mry-mb-20 mry-fo">Explore Our Amazing Collections<span
+									class="mry-animation-el"></span></h1>
 						</div>
 					</div>
 				</div>
 				<div class="gallery">
 
-					<img class="four-grid-cells"
-						src="img/compressed/2.webp"
-						alt="product" />
-		
-					<img
-					src="img/compressed/3.webp"
-					alt="product" />
-		
-					<img class="wide-image"
-					src="img/compressed/4.webp"
-					alt="product" />
-		
-					<img
-					src="img/compressed/5.webp"
-					alt="product" />
-		
-					<img
-					src="img/compressed/6.webp"
-					alt="product" />
-		
-					<img class="wide-image"
-					src="img/compressed/7.webp"
-					alt="product" />
+					<img class="four-grid-cells" src="img/compressed/2.webp" alt="product" />
 
-					<img class="four-grid-cells"
-						src="img/8.jpeg"
-						alt="product" />
-		
-					<img
-					src="img/compressed/9.webp"
-					alt="product" />
-		
-					<img class="wide-image"
-					src="img/compressed/10.webp"
-					alt="product" />
-		
-					<img
-					src="img/11.jpeg"
-					alt="product" />
-		
-					<img
-					src="img/12.jpeg"
-					alt="product" />
-		
-					<img class="wide-image"
-					src="img/compressed/13.webp"
-					alt="product" />
-		
-					<img
-					src="img/compressed/15.webp"
-					alt="product" />
-		
-					<img
-					src="img/compressed/20.webp"
-					alt="product" />
-		
-					<img
-					src="img/compressed/17.webp"
-					alt="product" />
-		
-					<img
-					src="img/compressed/19.webp"
-					alt="product" />
-		
-					<img 
-					src="img/compressed/18.webp"
-					alt="product" />
-					
-					<img 
-					src="img/compressed/16.webp"
-					alt="product" />
+					<img src="img/compressed/3.webp" alt="product" />
+
+					<img class="wide-image" src="img/compressed/4.webp" alt="product" />
+
+					<img src="img/compressed/5.webp" alt="product" />
+
+					<img src="img/compressed/6.webp" alt="product" />
+
+					<img class="wide-image" src="img/compressed/7.webp" alt="product" />
+
+					<img class="four-grid-cells" src="img/8.jpeg" alt="product" />
+
+					<img src="img/compressed/9.webp" alt="product" />
+
+					<img class="wide-image" src="img/compressed/10.webp" alt="product" />
+
+					<img src="img/11.jpeg" alt="product" />
+
+					<img src="img/12.jpeg" alt="product" />
+
+					<img class="wide-image" src="img/compressed/13.webp" alt="product" />
+
+					<img src="img/compressed/15.webp" alt="product" />
+
+					<img src="img/compressed/20.webp" alt="product" />
+
+					<img src="img/compressed/17.webp" alt="product" />
+
+					<img src="img/compressed/19.webp" alt="product" />
+
+					<img src="img/compressed/18.webp" alt="product" />
+
+					<img src="img/compressed/16.webp" alt="product" />
 				</div>
 
 				<!-- <div class="image-grid">
@@ -355,16 +317,11 @@ img.wide-image {
 	<!-- jquery js -->
 	<script src="js/plugins/jquery.min.js"></script>
 	<!-- tween max js -->
-	<script src="js/plugins/tween-max.min.js"></script>
 	<!-- scroll magic js -->
-	<script src="js/plugins/scroll-magic.js"></script>
 	<!-- scroll magic gsap plugin js -->
-	<script src="js/plugins/scroll-magic-gsap-plugin.js"></script>
 	<!-- swiper js -->
 	<!-- isotope js -->
-	<script src="js/plugins/isotope.min.js"></script>
 	<!-- fancybox js -->
-	<script src="js/plugins/fancybox.min.js"></script>
 	<!-- smooth scrollbar js -->
 	<script src="js/plugins/smooth-scrollbar.min.js"></script>
 	<!-- overscroll js -->
@@ -378,4 +335,5 @@ img.wide-image {
 
 
 <!-- Mirrored from steady-entremet-6081f5.netlify.app/portfolio-box-1 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Oct 2024 18:35:57 GMT -->
+
 </html>
